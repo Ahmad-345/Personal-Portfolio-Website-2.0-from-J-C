@@ -491,7 +491,6 @@ p {
       z-index: 1;
       user-select: none; }
     .main .hero .hero-person-image {
-      max-width: 95%;
       user-select: none;
       -webkit-user-drag: none;
       position: relative;
