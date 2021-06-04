@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Ahd. | Portfolio</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#333333">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+  <!-- BEGIN SVG DEFINITIONS -->
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="menuOpen" viewBox='0 0 512 512'>
+      <path fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='32' d='M80 160h352M80 256h352M80 352h352'/>
+    </symbol>
+
+    <symbol id="menuClose" viewBox='0 0 512 512'>
+      <path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M368 368L144 144M368 144L144 368'/>
+    </symbol>
+
+    <symbol id="github" viewBox='0 0 512 512'>
+      <path d='M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z'/>
+    </symbol>
+
+    <symbol id="linkedin" viewBox='0 0 512 512'>
+      <path d='M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z'/>
+    </symbol>
+
+    <symbol id="facebook" viewBox='0 0 512 512'>
+      <path d='M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z' fill-rule='evenodd'/>
+    </symbol>
+    
+    <symbol id="codelogo" viewBox='0 0 512 512'>
+      <path fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32' d='M160 368L32 256l128-112M352 368l128-112-128-112M304 96l-96 320'/>
+    </symbol>
+    
+    <symbol id="DesignMarker" viewBox='0 0 512 512'>
+      <rect x='48' y='64' width='416' height='384' rx='48' ry='48' fill='none' stroke='currentColor' stroke-linejoin='round' stroke-width='32'/><path d='M397.82 64H114.18C77.69 64 48 94.15 48 131.2V176h16c0-16 16-32 32-32h320c16 0 32 16 32 32h16v-44.8c0-37.05-29.69-67.2-66.18-67.2z'/>
+    </symbol>  
+    
+    <symbol id="imageIcon" viewBox='0 0 512 512'>
+      <rect x='48' y='80' width='416' height='352' rx='48' ry='48' fill='none' stroke='currentColor' stroke-linejoin='round' stroke-width='32'/><circle cx='336' cy='176' r='32' fill='none' stroke='currentColor' stroke-miterlimit='10' stroke-width='32'/><path d='M304 335.79l-90.66-90.49a32 32 0 00-43.87-1.3L48 352M224 432l123.34-123.34a32 32 0 0143.11-2L464 368' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/>
+    </symbol>    
+    
+    <symbol id="refresh" viewBox='0 0 512 512'>
+      <path d='M400 148l-21.12-24.57A191.43 191.43 0 00240 64C134 64 48 150 48 256s86 192 192 192a192.09 192.09 0 00181.07-128' fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='32'/><path d='M464 97.42V208a16 16 0 01-16 16H337.42c-14.26 0-21.4-17.23-11.32-27.31L436.69 86.1C446.77 76 464 83.16 464 97.42z'/>
+    </symbol>
+    
+    <symbol id="location" viewBox='0 0 512 512'>
+      <path d='M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/><circle cx='256' cy='192' r='48' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'/>
+    </symbol>
+    
+    <symbol id="telephone" viewBox='0 0 512 512'>
+      <path d='M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z' fill='none' stroke='currentColor' stroke-miterlimit='10' stroke-width='32'/>
+    </symbol>
+    
+    <symbol id="send" viewBox='0 0 512 512'>
+      <path d='M480 32L32 240h240v240L480 32z'/>
+    </symbol>
+  </svg>
+  <!-- END SVG DEFINITIONS -->
+
+  <div class="hamburger-menu">
+    <svg class="idx-sm-svg open"><use xlink:href="#menuOpen"></use></svg>
+    <svg class="idx-sm-svg close"><use xlink:href="#menuClose"></use></svg>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="nav">
+
+    <div class="intro">
+      <h1 class="intro-heading">Mobeen Ahmad</h1>
+      <h2 class="intro-subheading">Front End Web Developer</h2>
+    </div>
+
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#about" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#skills" class="nav-link">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a href="#experience" class="nav-link">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a href=#contact class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <div class="social-media-wrapper">
+      <span>Reach me on</span>
+      <div class="social-media">
+        <a href="https://github.com/Ahmad-345" class="sm-link" target="_blank">
+          <svg class="idx-sm-svg"><use xlink:href="#github"></use></svg>
+        </a>
+        <a href="#" class="sm-link" target="_blank">
+          <svg class="idx-sm-svg"><use xlink:href="#linkedin"></use></svg>
+        </a>
+        <a href="#" class="sm-link" target="_blank">
+          <svg class="idx-sm-svg"><use xlink:href="#facebook"></use></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="copyright-notice">
+      <p>Copyright &copy; 2021 All Rights Reserved.</p>
+    </div>
+  </nav><!-- /Navbar -->
+ 
+  <!-- Main -->
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero">
+      <h5 class="name-heading">Ahmad</h5>
+      <img class="hero-person-image" src="images/2365.png" alt="auther_image">
+      <a href="#" class="scroll-down">
+        <div class="mouse">
+          <span></span>
+        </div>
+        <div class="arrow">
+          <span></span>
+        </div>
+      </a>
+    </section><!-- /Hero -->
+    
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="heading-group">
+          <span class="section-head-small">About</span>
+          <h5 class="section-head-large">Who am I?</h5>
+        </div>
+        <div class="about-me-intro">
+          <div class="intro-description">
+            <p class="justify-paragraph"><span>Hi, I'm Mobeen Ahmad,</span> Computer Science undergraduate. It was in Hight school where I first discovered my passion and interest for Computer Science and continued after. During my bachelor degree I explored different areas of computer sciences, like with some other fellow students we worked on Internet of Things in Smart Healthcare Systems and Internet of Things-based Smart City Environment using Big Data Analytics during my BS. I Also alone developed a game called "Block Breaker" which was based on very popular Classic Arcade types Games, But this was developed with the latest technologies like C# and Unity Engine. After learning Web Developement and building websites for friends and family for fun, I soon learned that web development was a very lucrative career choice. I put a pause to other subfields of computer science to explore and started to learn Web Development more, Since then I have built dozens of awesome websites for remote users. Now my objective is the utilization of my skills to provide the best and world class services required for modern needs, through this I can learn more and I serve human beings in the best possible way.</p>
+          </div>
+          <div class="call-to-action">
+            <p class="justify-paragraph">Ahd is a very young developer, His goal is product quality and customer satisfaction. He provides execptional first class services, Lowest prices, Satisfaction guaranteed or you don't pay. Ask him Anything! If you are interested in any of his websites please share your thoughts, He loves what you do and your review would be a big plus support for his development journey.</p>
+            <a href="#contact" class="btn cta-btn dancing-btn">Hire Him</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About -->
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="heading-group">
+          <span class="section-head-small">What I do</span>
+          <h5 class="section-head-large">My Experties</h5>
+        </div>
+
+        <div class="grid">
+          <div class="grid-item orange">
+            <span class="item-icon">
+              <svg class="idx-sm-svg"><use xlink:href="#codelogo"></use></svg>
+            </span>
+            <h3 class="item-heading">Web Development</h3>
+          </div>
+          <div class="grid-item yellow">
+            <span class="item-icon">
+              <svg class="idx-sm-svg"><use xlink:href="#DesignMarker"></use></svg>
+            </span>
+            <h3 class="item-heading">Web Design</h3>
+          </div>
+          <div class="grid-item blue">
+            <span class="item-icon">
+              <svg class="idx-sm-svg"><use xlink:href="#imageIcon"></use></svg>
+            </span>
+            <h3 class="item-heading">Graphic Design</h3>
+          </div>
+        </div>
+
+        <div class="heading-group margin-top">
+          <span class="section-head-small">What I Use</span>
+          <h5 class="section-head-large">Software & Web Technologies</h5>
+        </div>
+
+        <div class="grid">
+          <div class="grid-item orange">
+            <div class="item-skill">
+              <h5 class="skill-name">Html</h5>
+            </div>
+            <p class="skill-description">
+              HTML (HyperText Markup Language) is a descriptive language that specifies webpage structure. It is used for publishing hypertext on the World Wide Web. It is a non-proprietary format based upon <abbr title="Standard Generalized MarkUp Language">SGML</abbr>, and can be created and processed by a wide range of tools, from simple plain text editors - you type it in from scratch - to sophisticated <acronym title="What You See Is What You Get">WYSIWYG</acronym> authoring tools. HTML uses tags such as <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code> to structure text into headings, paragraphs, lists, hypertext links etc.</p> 
+          </div>
+          <div class="grid-item blue">
+            <div class="item-skill">
+              <h5 class="skill-name">CSS</h5>
+            </div>
+            <p class="skill-description">
+              CSS (Cascading Style Sheets) is a declarative language that controls how webpages look in the browser. The browser applies CSS style declarations to selected elements to display them properly. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is one of the three core Web technologies, along with HTML and JavaScript. CSS is independent of HTML and can be used with any <abbr title="Extensible Markup Language ">XML</abbr>-based markup language.
+            </p>
+          </div>
+          <div class="grid-item yellow">
+            <div class="item-skill">
+              <h5 class="skill-name">JavaScript</h5>
+            </div>
+            <p class="skill-description">
+              JavaScript is the scripting language that you use to add behaviour to your web pages — it can be used to validate the data you enter into a form (tell you if it is in the right format or not), provide drag and drop functionality, change styles on the fly, animate page elements such as menus, handle button functionality, and a million other things. Most modern JavaScript works by finding a target HTML element, and then doing something to it, just like CSS, but the way it operates, the syntax etc. is rather different.
+            </p>
+          </div>
+          <div class="grid-item purple">
+            <div class="item-skill">
+              <h5 class="skill-name">Bootstrape</h5>
+            </div>
+            <p class="skill-description">
+              It is an open-source HTML, CSS & JS Library that focuses on simplifying the development of web pages. The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. Once added to a project, it provides basic style definitions for all HTML elements. It also contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+              For example, it has provisioned for light- and dark-colored tables, page headings, more prominent pull quotes, and text with a highlight.
+            </p>
+          </div>
+          <div class="grid-item dark-blue">
+            <div class="item-skill">
+              <h5 class="skill-name">Adobe Illustrator</h5>
+            </div>
+            <p class="skill-description">
+              Web pages and apps need clean, elegant, and functional design to hold the attention of users who are often short on time. Powerful and intuitive web design software like Adobe Illustrator will get you form concept to launch faster. Adobe Illustrator provides you a pixel-perfect design environment to create flexible and free-flowing web elements. It offers you everything you need to create a clean and crisp web layout – vector graphics, responsive media icons, scalable components, CSS generation, SVG export, wireframes, and reusable symbols that can go anywhere—print, web and apps, video and animations, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Skills -->
+
+    <!-- Motto -->
+    <section class="motto">
+      <div class="container">
+        <div class="qoute-wrapper">
+          <blockquote class="quote">Oppertunities don't happen. You create them.</blockquote>
+          <cite class="quote-by">~ Chris Grosser</cite>
+        </div>
+      </div>
+    </section><!-- /Motto -->
+
+    <!-- Work-Experience -->
+    <section class="work-experience" id="experience">
+      <div class="container">
+        <div class="heading-group">
+          <span class="section-head-small">Previous employment</span>
+          <h5 class="section-head-large">Work Experience</h5>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-heading">
+              <h3 class="timeline-entry-name">Front-End Web Developer</h3>
+              <span>2020 - Present</span>
+            </div>
+            <p>After getting equipped with the skill set required to stand tall in developers line I then started my journey as a Freelance Web Developer. I have more than year and a half Proven Front-End Web Developer experience and have developed dozens of Front-Ends for websites, Collaborated with other team members, which gives me the ability to convert Pixel perfect PSD to HTML/CSS, Ensure the technical feasibility of UI/UX designs, Build reusable code and libraries for future use, Develop new user-facing features, Optimize application for maximum performance, speed and scalability. I Assure to stay up-to-date with all recent developments in the JavaScript space, I also Keep eye on security updates and issues found in all projects.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-heading">
+              <h3 class="timeline-entry-name">Junior Web Developer</h3>
+              <span>2019 - 2020</span>
+            </div>
+            <p>I was able not to stop after learning Graphic Design. To give your deisgns life and to make it able to fly independently anywhere in the world you put it into the Web, So I become a web developer. I've highly proficient understanding of web markup, including HTML5, CSS3, server-side CSS pre-processing platforms, such as LESS and SASS Understanding of server-side rendering and its benefits and use cases. I also do both functional programming and object-oriented programming paradigms and have the ability to write efficient, secure, well-documented, and clean JavaScript code.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-heading">
+              <h3 class="timeline-entry-name">Graphic Design intern</h3>
+              <span>2018 - 2019</span>
+            </div>
+            <p>As a Graphic Design Intern I have worked with Adobe Illustrator and canvas to Design digital materials including posts, UI, banners, email templates, blogs, newsletters, and social media campaigns. I was able to fully embrace, understand and bring to life disruptive best-in-class memorable digital content on all social platforms. I also Collaborated closely with other people, peers and management to produce top-notch designs.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Work-Experience -->
+
+    <!-- Portfolio -->
+    <section class="my-portfolio" id="portfolio">
+      <div class="container">
+        <div class="heading-group">
+          <span class="section-head-small">What I do</span>
+          <h5 class="section-head-large">My Portfolio</h5>
+        </div>
+
+        <div class="grid">
+          <div class="grid-item">
+            <img src="./images/1.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">JD <span>01</span></h5>
+              <span class="project-type">Website (Portfolio And Freelancer website)</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/Portfolio-Website-With-SASS" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/2.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">NewsGrid <span>02</span></h5>
+              <span class="project-type">News Agency Website</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/NewsGrid-using-CSS-Grid" class="btn info-btn" target="_blank" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/3.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">EdgeLedger <span>03</span></h5>
+              <span class="project-type">Product Landing page</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/HTML-CSS-Boilerplates-And-Clones/tree/master/B_T/5.%20EdgeLedger%20Website%20(Flexbox)" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/4.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">Knowledge Resume <span>04</span></h5>
+              <span class="project-type">Timeline Resume </span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/HTML-CSS-Boilerplates-And-Clones/tree/master/B_T/6.%20Timeline%20Resume" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/6.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">Slides <span>05</span></h5>
+              <span class="project-type">Presentation Website</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/HTML-CSS-Boilerplates-And-Clones/tree/master/B_T/6.%20Slides" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/5.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">Nigo <span>06</span></h5>
+              <span class="project-type">Video Backgrond Landing page Website</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/HTML-CSS-Boilerplates-And-Clones/tree/master/B_T/4.%20Epic%20Responsive%20Website%20With%20Video%20Background/dist" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/7.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">Hamburger <span>07</span></h5>
+              <span class="project-type">Hamburger Menu With overlay</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/HTML-CSS-Boilerplates-And-Clones/tree/master/B_T/7.%20Hamburger%20Menu%20with%20Overlay" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/8.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">Dropy <span>08</span></h5>
+              <span class="project-type">Drop down menu</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/HTML-CSS-Boilerplates-And-Clones/tree/master/B_T/8.%20Quick%20Dropdown%20Menu%20Project" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/9.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">ATF <span>09</span></h5>
+              <span class="project-type">Above The Fold showcase</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/An-HTML-Tutorial-and-CSS-Tutorial-by-Todd-Mcleod/tree/master/31_Now-Go-Build-It/02_teaching-website/02_filling-up-the-design" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/10.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">Microsoft Homepage Clone<span>10</span></h5>
+              <span class="project-type">Website</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/HTML-CSS-Boilerplates-And-Clones/tree/master/B_T/2.%20Microsoft%20Homepage%20Clone%20-%20CSS%20Grid%2C%20Flex%20%26%20Media%20Queries" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/11.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">Loruki<span>11</span></h5>
+              <span class="project-type">Website</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/HTML-CSS-Boilerplates-And-Clones/tree/master/B_T/3.%20Loruki%20Featuring%2C%20Documentaion%20Website%20%20HTML%2C%20CSS%20Grid%2C%20Flexbox%20%26%20More" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/12.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">Contract<span>12</span></h5>
+              <span class="project-type">contractor Website</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/An-HTML-Tutorial-and-CSS-Tutorial-by-Todd-Mcleod/tree/master/31_Now-Go-Build-It/01_contractor-website/01_starting-files" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./images/13.0.jpg" alt="" class="portfolio-item-image">
+            <div class="portfolio-item-info">
+              <h5 class="project-name">Flying<span>13</span></h5>
+              <span class="project-type">Travel Website</span>
+              <div class="info-cta">
+                <a href="#" class="btn info-btn" data-tool-tip="Live preview option will be restored soon">Live Demo</a>
+                <a href="https://github.com/Ahmad-345/An-HTML-Tutorial-and-CSS-Tutorial-by-Todd-Mcleod/tree/master/31_Now-Go-Build-It/03_travel-website/02_finished" class="btn info-btn" target="_blank">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="load-more flex flex-left">
+          <a href="#contact" class="btn btn-blue centering-in-btn">
+            See more
+            <svg class="idx-sm-svg"><use xlink:href="#refresh"></use></svg>
+          </a>
+        </div>
+      </div><!-- /Grid -->
+    </section><!-- /Portfolio -->
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="heading-group">
+          <span class="section-head-small">Contact me</span>
+          <h5 class="section-head-large">Let's Work together</h5>
+        </div>
+        <div class="contact-info-wrapper"><!-- flex-->
+          <div class="contact-info"><!-- flex item-->
+
+            <div class="contact-info-item">
+              <div class="info-item-icon">
+                <svg class="idx-sm-svg"><use xlink:href="#location"></use></svg>
+              </div>
+              <div class="data-wrapper">
+                <span class="info-item-data">House No. 265, Street No. 44</span>
+                <span class="info-item-data">Korang Town, City Islamabad</span>
+                <span class="info-item-data">Pakistan</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-item-icon">
+                <svg class="idx-sm-svg"><use xlink:href="#telephone"></use></svg>
+              </div>
+              <div class="data-wrapper">
+                <span class="info-item-data" ><a href="tel:+923339440348">(+92) 333-9440-348</a></span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" name="contact" method="POST" data-netlify="true"><!-- flex item-->
+            <input type="text" name="name" placeholder="Full name" required class="input">
+            <input type="email" name="email" placeholder="Email address" required class="input">
+            <input type="text" name="subject" placeholder="Subject" required class="input">
+            <textarea rows="7" name="message" placeholder="Message" required class="text-area"></textarea>
+            <button type="submit" class="btn btn-blue centering-in-btn">
+              Send message
+              <svg class="idx-sm-svg"><use xlink:href="#send"></use></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section><!-- /Contact -->
+
+    <div class="next-project-slogan">
+      <h2>Let's Start Your Next Project</h2>
+    </div>
+
+  </main><!-- /Main -->
+
+  <!--Link JS-->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
